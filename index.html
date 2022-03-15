@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-    <link href="CSS/style.css" type="text/css" rel="stylesheet">
     <title>Assignment 1 - ePortfolio</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -12,24 +12,24 @@
             </div>
             <div class="middleheader">
                 <h1> Phil Bui</h1>
-                <hr style="color:#C238C2">
+                <hr>
                 <h2>ePortfolio</h2>
             </div>
             <div class="rightheader">
                 <ul>
                     <li><img class="icons" src="css/student icon.png">s2008156</li>
-                    <li><img class="icons" src="css/email.png">s2008156@student.rmit.edu.au</li>
-                    <li><img class="icons" src="css/website.png">student github</li>
-                    <li><img class="icons" src="css/phone.png">contact number</li>
+                    <li><img class="icons" src="css/email.png"><a href="mailto:s2008156@student.rmit.edu.au">@student.rmit.edu.au</a></li>
+                    <li><img class="icons" src="css/website.png"><a href="https://github.com/Fi-Boo" target="_blank">Github</a></li>
+                    <li><img class="icons" src="css/phone.png">0430 364 714</li>
                 </ul>
             </div>
         </header>
         <nav>
             <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#it-job">Ideal IT job</a></li>
-                <li><a href="#online-tests">Online Tests</a></li>
-                <li>IT Project</li>
+                <li><a class="navlink" href="#about-me">About me</a></li>
+                <li><a class="navlink" href="#it-job">Ideal IT job</a></li>
+                <li><a class="navlink" href="#online-tests">Online Tests</a></li>
+                <li><a class="navlink" href="#it-project">IT Project</a></li>
             </ul>
         </nav>        
     </div>
@@ -69,7 +69,7 @@
             <img class="studypic" src="css/lightbulb.png" alt="lightbulb moment">
             <h3>Why RMIT?</h3>
             <p> Upon deciding to study, my first step was to turn to Google. All the results, whether they be from professional websites, to personal tips in forums, required me to have a set field or career path in mind. My dilemma was that I hadn’t decided on a field because all of them were appealing and the more I delved into them the more I was curious about them. My reason was simply to study for knowledge.</p>
-            <p id="it-job">My decision to go with RMIT was due to the student advisor’s advice. Instead of looking at specific short courses and units that focused purely on one particular field of IT, I should look at a course that offered a broader range of units that touched upon as many aspects of IT as possible. </p>
+            <p>My decision to go with RMIT was due to the student advisor’s advice. Instead of looking <str id="it-job"></str>at specific short courses and units that focused purely on one particular field of IT, I should look at a course that offered a broader range of units that touched upon as many aspects of IT as possible. </p>
             <p>From this foundation unit, I plan to continue with the rest of the Bachelor of IT degree to gain not only the necessary skills for any IT field I find interesting, but also the knowledge to answer the age old question: <em>Why is the WIFI so slow?</em>
             </p>
                 
@@ -80,24 +80,28 @@
         </div>
         <div class="maincontent">
             <img class="idealjob" src="css/Ideal_Job.jpg" alt="Ideal Job Advertisement">
-        <h3>Junior Full Stack Developer</h3>
+        <h3>Junior Full Stack Developer<a href="https://www.seek.com.au/job/56221075?type=standard#sol=645bfb1fc497ae297bdd9a01f816bb5e857240bc" target="_blank"> <img class="seek" src="css/seek_icon.jpg" alt="link to job ad @seek"></a>
+        </h3>
         <p> This IT company is looking for fresh graduates with experience in coding who are keen and willing to be mentored in a full stack developers role. This would involve learning both back and front end application of their business' software.  </p>
         <p>This appeals to me because it would allow me to understand all aspects of business' software product. As this is also a 'mentored' position, it would mean little to no work experience required.</p>
         <h4> Skills required</h4>
-        <ul class="test">
+        <ul class="jobskills">
             <li>A degree in IT or equivalent</li>
             <li>Good communication skills</li>
             <li>Willingness to learn and adapt to business requirements</li>
-            <li>Prior coding experience in any of the following would be advantageous.</li>
-            <ul>    <li>Scripting Language - C, C#, C++, Node.Js</li>
-                <li>Any JS Framework such as: React, Angular, Vue.js</li></ul>
+            <li>Prior coding experience in any of the following would be advantageous.
+                <ul>    
+                    <li>Scripting Language - C, C#, C++, Node.Js</li>
+                    <li>Any JS Framework such as: React, Angular, Vue.js</li>
+                </ul>
+            </li>
         </ul>
         <h4>My Current Skills</h4>
-        <ul class="test">
+        <ul class="jobskills">
             <li>Willingness to learn</li>
-            <li id="online-tests">Foundational knowledge of HTML, CSS, Python, Javascript</li>
+            <li>Foundational knowledge of HTML, CSS, Python, Javascript</li>
         </ul>
-        <h4>Study Plan</h4>
+        <h4 id="online-tests">Study Plan</h4>
         <p>To obtain the required qualifications for this job I've enrolled into a Bachelor of IT at RMIT via Open University.
             I believe this degree with expose me to all the modern scripting languages and frameworks required for the position.
         </p>
@@ -106,13 +110,13 @@
     <div class="main">
         <div class="titleright"> Online Tests
         </div>
-        <div class="maincontent"> 
+        <div class="maincontent" > 
             <ul class="testlist">
-                <li class="h3test">Myers Briggs</li>
+                <li class="h3test"><a class="navlink" href="https://www.16personalities.com/" target="_blank">Myers Briggs</a></li>
                 <li class="testimgli"><img class="thumbnail" src="css/Myers-Briggs_test.jpg" alt="Myers Briggs test result"></li>
-                <li class="h3test">Learning Style</li>
+                <li class="h3test"><a class="navlink" href="https://personalitymax.com/learning-styles-test/" target="_blank">Learning Style</a></li>
                 <li class="testimgli"><img class="thumbnail" src="css/Learning_test.jpg" alt="learning test result"></li>
-                <li class="h3test">Team Role</li>
+                <li class="h3test"><a class="navlink" href="https://www.123test.com/team-roles-test/" target="_blank">Team Role</a></li>
                 <li class="testimgli"><img class="thumbnail" src="css/team role test.png" alt="team role test result"></li>
             </ul>
             <div class="grey">
@@ -124,7 +128,7 @@
                 <cite> Learning Style Test</cite>
                 </blockquote>
             </div>
-            <p>These two test results perfectly sum up my personality and approach to life. My inquisitive nature to understand the inner workings of everything around me, whether it be machine, code, or people can at times create more trouble than its worth. My stubbornness and lack of knowledge in certain fields can be a volatile mix as I can lose myself in the process of reconstructing projects in order to understand their inner workings . Sometimes it pays off, but mostly I have to resort to ‘Googling’ for assistance. </p>
+            <p>These two test results perfectly sum up my personality and approach to life. My inquisitive nature to understand the inner workings of everything around me, whether it be machine, code, or people can at times create more trouble than its worth. <str id="it-project"></str>My stubbornness and lack of knowledge in certain fields can be a volatile mix as I can lose myself in the process of reconstructing projects in order to understand their inner workings . Sometimes it pays off, but mostly I have to resort to ‘Googling’ for assistance. </p>
             <p>In a group setting, I enjoy listening and throwing out ideas. Once a plan is set, I’ll dive into the required tasks eagerly. Confrontation and leadership aren’t my strong points so I’ll gravitate towards members who are happy to take on those roles. </p>
         </div>    
     </div>
@@ -132,28 +136,20 @@
         <div class="titleleft"> IT Project
         </div>
         <div class="maincontent">
-            <img class="idealjob" src="css/Ideal_Job.jpg" alt="Ideal Job Advertisement">
-        <h3>Junior Full Stack Developer</h3>
-        <p> This IT company is looking for fresh graduates with experience in coding who are keen and willing to be mentored in a full stack developers role. This would involve learning both back and front end application of their business' software.  </p>
-        <p>This appeals to me because it would allow me to understand all aspects of business' software product. As this is also a 'mentored' position, it would mean little to no work experience required.</p>
-        <h4> Skills required</h4>
-        <ul class="test">
-            <li>A degree in IT or equivalent</li>
-            <li>Good communication skills</li>
-            <li>Willingness to learn and adapt to business requirements</li>
-            <li>Prior coding experience in any of the following would be advantageous.</li>
-            <li>Scripting Language - C, C#, C++, Node.Js</li>
-            <li>Any JS Framework such as: React, Angular, Vue.js</li>
-        </ul>
-        <h4>My Current Skills</h4>
-        <ul class="test">
-            <li>Willingness to learn</li>
-            <li>Foundational knowledge of HTML, CSS, Python, Javascript</li>
-        </ul>
-        <h4 id="dummy">Study Plan</h4>
-        <p>To obtain the required qualifications for this job I've enrolled into a Bachelor of IT at RMIT via Open University.
-            I believe this degree with expose me to all the modern scripting languages and frameworks required for the position.
-        </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis orci, condimentum varius enim non, sodales faucibus velit. Nulla suscipit pretium nulla faucibus lobortis. Fusce nec augue ipsum. Pellentesque in velit tortor. Praesent eu pretium dui. Phasellus id quam vel est gravida dapibus. Donec ac sodales ligula, id sollicitudin mauris. Mauris lobortis venenatis ipsum sit amet finibus. Cras ullamcorper odio in nulla scelerisque rutrum. Etiam accumsan sem enim, sed gravida velit sodales in. Curabitur facilisis purus metus, vitae consequat ex vulputate non. Duis a leo accumsan, hendrerit sem eget, malesuada velit. Integer egestas felis et lectus elementum efficitur. Suspendisse eget feugiat nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi in orci ultrices nibh iaculis pulvinar. </p>
+        
         </div>
     </div>
 </body>
