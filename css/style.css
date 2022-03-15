@@ -221,14 +221,13 @@ cite {
     width: 320px;
     float: right;
     border-radius: 5px;
-    margin: 0 0 0 20px;
+    margin: 14px 0 0 20px;
     border: 2px solid #C238C2;
 }
 
 .idealjob:hover {
     position:relative;
-    top:-25px;
-    left:-35px;
+    left: -10px;
     width:700px;
     height:auto;
     display:block;
