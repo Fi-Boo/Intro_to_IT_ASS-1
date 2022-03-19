@@ -218,7 +218,7 @@ cite {
 }
 
 .idealjob {
-    width: 320px;
+    width: 220px;
     float: right;
     border-radius: 5px;
     margin: 14px 0 0 20px;
@@ -227,18 +227,18 @@ cite {
 
 .idealjob:hover {
     position:relative;
-    left: -10px;
-    width:700px;
+    left: 50px;
+    width:500px;
     height:auto;
     display:block;
-    z-index:998;
+    z-index:6;
 }
 
 .seek {
     width: 50px;
     border-radius: 5px;
     border: 1px solid #C238C2;
-    margin: 0 0 0 80px;
+    margin: 0 0 0 183px;
 }
 .thumbnail {
     width: 100px;
@@ -252,7 +252,7 @@ cite {
     width:500px;
     height:auto;
     display:block;
-    z-index:999;
+    z-index:5;
 }
 
 .testlist {
@@ -260,6 +260,12 @@ cite {
     flex-flow: row nowrap;
     border-radius: 5px;
     padding: 20px 100px;
+}
+
+.testcite {
+    padding: 0 120px;
+    font-size: 6px;
+    margin: 0;
 }
 
 .testlist li {
@@ -283,8 +289,18 @@ cite {
     background-color: white;
 }
 
+.jobskillsdiv {
+    display: flex;
+    flex-flow: row;
+}
+
+.jobskillsinner {
+    width: 400px;
+    padding: 0 20px;
+}
+
 .jobskills {
-    margin: 0 350px 0 0;
+    margin: 0;
     padding: 5px 5px 5px 20px;
     border-radius: 5px;
     background-color: #c5c3c6;
@@ -323,4 +339,33 @@ hr {
     background-color:#C238C2;
     height: 2px;
     border: 0;
+}
+
+.bossencounter {
+    background-color: #c5c3c6;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.encounterstage {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectimg {
+    width: 100px;
+    float: left;
+}
+
+.projectimg:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:400px;
+    display:block;
+    z-index:5;
+}
+
+.projectcontent {
+    margin: 0 20px;
 }
